@@ -9,8 +9,10 @@ import time
 import fade
 
 os.system("clear")
-logo = """         
+logo = """  
 
+
+"""
 faded_text = fade.fire(logo)
 print(faded_text)
 # Parse inputs
