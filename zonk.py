@@ -11,7 +11,8 @@ import fade
 os.system("clear")
 logo = """         
 
-
+faded_text = fade.fire(logo)
+print(faded_text)
 # Parse inputs
 host = ""
 ip = ""
@@ -51,8 +52,9 @@ def print_status():
 
     thread_num += 1
     #print the output on the sameline
-    sys.stdout.write(f"\r {time.ctime().split( )[3]} [{str(thread_num)}] #-#-# Hold Your Tears #-#-#")
-    print("\033[38;5;37m{time.ctime} \033[38;5;111m {str(thread_num)}
+    sys.stdout.write(f"\r\033[102m\033[30m{time.ctime().split( )[3]}\033[0m\033[103m [{str(thread_num)}]")
+    sys.stdout.flush()
+    print (f"\033[95mHost \033[92m" +str(host)+ "\033[32m" +ip+ ""))
     sys.stdout.flush()
     thread_num_mutex.release()
 
