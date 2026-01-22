@@ -45,6 +45,7 @@ def print_status():
     thread_num += 1
     #print the output on the sameline
     sys.stdout.write(f"\r {time.ctime().split( )[3]} [{str(thread_num)}] #-#-# Hold Your Tears #-#-#")
+    print("\033[38;5;37m{time.ctime} \033[38;5;111m {str(thread_num)}
     sys.stdout.flush()
     thread_num_mutex.release()
 
