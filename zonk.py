@@ -57,8 +57,8 @@ def print_status():
     sys.stdout.write(f"\r\033[102m\033[30m{time.ctime().split( )[3]}\033[0m")
     print (f"\033[42m Get-started \033[92m" +str(host)+ "\033[32mport \033[44m" +ip+ "\033[0m")
     sys.stdout.flush()
-    sys.stdout.write(f"\r\033[0m\033[103m [{str(thread_num)}]\033[0m")
-    print (f"\033[46m Get-started \033[33m" +str(host)+ "\033[32mport \033[44m" +ip+ "\033[0m")
+    sys.stdout.write(f"\r\033[103m [{str(thread_num)}]\033[0m")
+    print (f"\033[46m Get-started \033[33m" +str(host)+ "\033[32mprotocol-address \033[44m" +ip+ "\033[0m")
     thread_num_mutex.release()
 
 
