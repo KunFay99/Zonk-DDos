@@ -1,9 +1,16 @@
+# -*- coding: utf-8 -*-
+import os
 import random
 import socket
 import string
 import sys
 import threading
 import time
+import fade
+
+os.system("clear")
+logo = """         
+
 
 # Parse inputs
 host = ""
